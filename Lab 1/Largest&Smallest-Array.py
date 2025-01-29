@@ -10,7 +10,7 @@ def largest_smallest(arr):
     
     return largest, smallest
 
-arr = [10, 89, 9, 56, 4, 80, 8, "A"]
+arr = [10, 89, 9, 56, 4, 80, 8]
 largest, smallest = largest_smallest(arr)
 print(f"Largest number = {largest}")
 print(f"Smallest number = {smallest}")
