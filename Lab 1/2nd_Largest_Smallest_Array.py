@@ -22,5 +22,5 @@ def find_second_largest_and_smallest(arr):
 
 array = [10, 89, 9, 54, 4, 80, 8]
 second_largest, second_smallest = find_second_largest_and_smallest(array)
-print("Second Largest:", second_largest)
-print("Second Smallest:", second_smallest)
+print(f"Second Largest = {second_largest}")
+print(f"Second Smallest = {second_smallest}")
