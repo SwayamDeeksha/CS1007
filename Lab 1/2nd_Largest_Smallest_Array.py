@@ -1,4 +1,4 @@
-def find_second_largest_and_smallest(arr):
+def second_largest_and_smallest(arr):
     largest = second_largest = None
     smallest = second_smallest = None
     
@@ -21,6 +21,6 @@ def find_second_largest_and_smallest(arr):
     return second_largest, second_smallest
 
 array = [10, 89, 9, 54, 4, 80, 8]
-second_largest, second_smallest = find_second_largest_and_smallest(array)
+second_largest, second_smallest = second_largest_and_smallest(array)
 print(f"Second Largest = {second_largest}")
 print(f"Second Smallest = {second_smallest}")
