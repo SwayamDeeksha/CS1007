@@ -26,7 +26,10 @@ class Queue:
             return self.front.data
 
     def is_empty(self):
-        return self.front is None
+        if self.front is None:
+            return True
+        else:
+            return False
 
     def dequeue(self):
         if self.front is None:
