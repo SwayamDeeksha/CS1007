@@ -31,8 +31,7 @@ class BinaryTree:
             print(node.data, end = ", ")
             self._in_order_recursive(node.right)
     def post_order_traversal(self):
-        return self._post_order_recursive(self.root)
-
+        self._post_order_recursive(self.root)
     def _post_order_recursive(self, node):
         if node:
             self._post_order_recursive(node.left)
