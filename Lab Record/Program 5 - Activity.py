@@ -21,9 +21,9 @@ class Stack:
         popped_node = self.top
         self.top = self.top.next
         return popped_node.data
-    def __str__(Self):
+    def __str__(self):
         elements = []
-        current = Self.top
+        current = self.top
         while current:
             elements.append(str(current.data))
             current = current.next
