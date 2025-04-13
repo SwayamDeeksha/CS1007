@@ -33,5 +33,5 @@ sudoku.print_board()
 
 row, col, num = 0, 2, 3
 print(f"\nIs {num} in row {row}?{'Yes' if sudoku.is_in_row(row, num) else 'No'}")
-print(f"\nIs {num} in row {col}?{'Yes' if sudoku.is_in_col(col, num) else 'No'}")
+print(f"\nIs {num} in col {col}?{'Yes' if sudoku.is_in_col(col, num) else 'No'}")
 print(f"\nIs {num} in the grid containing cell ({row}, {col})? {'Yes' if sudoku.is_in_grid(row, col, num) else 'No'}")
