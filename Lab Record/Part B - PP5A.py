@@ -12,15 +12,18 @@ class Graph:
 
     def bfs(self, start):
         visited = set()
-        self._bfs_util(start, visited)
-
-    def _bfs_util(self, node, visited):
-        if node not in visited:
-            print(node, end=" -> ")
-            visited.add(node)
-            for neighbor in self.adj_list[node]:
-                if neighbor not in visited:
-                    self._bfs_util(neighbor, visited)
+        queue = [start]
+        self._bfs_util(queue, visited)
+        
+    def _bfs_util(self, queue, visited):
+        while queue:
+            node = queue.pop(0)
+            if node not in visited:
+                print(node, end=" -> ")
+                visited.add(node)
+                for neighbor in self.adj_list[node]:
+                    if neighbor not in visited:
+                        queue.append(neighbor)
 
 graph = Graph()
 graph.add_edge(0, 1)
